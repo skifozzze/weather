@@ -1,17 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/reset.css">
+
   <link rel="stylesheet" href="./style/style.css">
   <title>Weather</title>
-  
+  <style>
+    ul {
+      padding: 20px;
+      list-style: none;
+    }
+
+    p,
+    strong {
+      padding: 5px;
+      margin: 0;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+
+    h1 {
+      color: #52acb7;
+      margin-bottom: 10px;
+    }
+
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 20px 30px;
+      border: 1px solid #52acb7;
+      background: #52acb7;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      transition: all .3s;
+      margin-bottom: 15px;
+
+    }
+
+    button:hover {
+      background: #fff;
+      color: #52acb7;
+
+
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 30px;
+    }
+
+    .block {
+      margin: 10px 100px;
+      transition: all .3s;
+    }
+
+    .block:hover {
+
+      background-color: #d0dedf;
+      border-radius: 10px;
+    }
+
+
+    .logo {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .today-weather,
+    .today-temperature {
+      text-align: center;
+    }
+
+    .today-temperature {
+      font-size: 28px;
+    }
+
+    .day-name,
+    .day-temperature {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .coded-by {
+      font-size: 18px;
+      text-align: center;
+      color: gray;
+    }
+  </style>
+
 <body>
+  <div class="container">
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/5208/5208399.png" alt="logo" width="100" height="100">
 
-  <h1>hello</h1>
+    <h1 class="today-weather">Currently 21° in Tokyo</h1>
+    <div class="day-temperature today-temperature">
+      <p>15°</p>
+      <span>/</span>
+      <strong>23°</strong>
+    </div>
+    <ul class="next-day-weather">
+      <li>
+        <div class="block">
+          <div class="day-name">
+            <img src="https://cdn.icon-icons.com/icons2/1461/PNG/512/2998141-cloud-nature-rain-weather_99845.png"
+              alt="image" width="40" height="40">
+            <h3 class="day">Tomorrow</h3>
+          </div>
+          <div class="day-temperature">
+            <p>10°</p>
+            <span>/</span>
+            <strong>22°</strong>
+          </div>
+        </div>
 
-  <script src="./js/main.js" type="module"></script>
+      </li>
+      <li>
+        <div class="block">
+          <div class="day-name">
+            <img src="https://cdn-icons-png.flaticon.com/512/578/578116.png" alt="image" width="40" height="40">
+            <h3 class="day">Saturday</h3>
+          </div>
+          <div class="day-temperature">
+            <p>15°</p>
+            <span>/</span>
+            <strong>17°</strong>
+          </div>
+        </div>
+
+      </li>
+      <li>
+        <div class="block">
+          <div class="day-name">
+            <img src="https://w7.pngwing.com/pngs/285/586/png-transparent-icon-sun-presentation-product-area.png"
+              alt="image" width="40" height="40">
+            <h3 class="day">Sunday</h3>
+          </div>
+          <div class="day-temperature">
+            <p>25°</p>
+            <span>/</span>
+            <strong>28°</strong>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+    <button type="button">Change city</button>
+    <p class="coded-by">Coded by Nadiia Mudryk</p>
+  </div>
+
+
+
+
 </body>
+
 </html>
