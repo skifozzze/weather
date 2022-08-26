@@ -159,7 +159,24 @@
     <p class="coded-by">Coded by Nadiia Mudryk</p>
   </div>
 
+  <script>
+    function weather() {
 
+      let city = prompt('What city do you live in?');
+      let temperature = prompt('What temperature is it?');
+
+      let weatherInYourCity = document.querySelector('.today-weather');
+
+      weatherInYourCity.innerHTML = `Currently ${temperature}° in ${city}`;
+
+      let newLogo = document.querySelector('.logo');
+      newLogo.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/3549/3549293.png');
+
+    };
+
+    let changeCityBtn = document.querySelector('button');
+    changeCityBtn.addEventListener('click', weather);
+  </script>
 
 
 </body>
